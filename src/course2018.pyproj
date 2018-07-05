@@ -1,0 +1,121 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>f817803e-55de-4097-b75a-c93174d89a03</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>program.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>course2018</Name>
+    <RootNamespace>course2018</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="alice\alice_main.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="alice\data_utils_bak.py" />
+    <Compile Include="alice\data_utils.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="alice\week1_prepare_dataset.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="alice\week2_init_analysis.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="alice\week6_bigdata.py" />
+    <Compile Include="alice\week5_competition.py" />
+    <Compile Include="alice\week4_model_fit.py" />
+    <Compile Include="alice\week3_visualization.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="alice\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="l1_pandas.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="l2_visualization.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="l4_linear.py" />
+    <Compile Include="l3_classification.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="l3_optional\criterion.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="l3_optional\decision_tree.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="l3_optional\node.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="l3_optional\utils.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="l3_optional\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="l5_composition.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="l6_features.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="l6_homework\alice_competition_bench1.py" />
+    <Compile Include="l6_homework\alice_competition_bench2_9562_9562.py" />
+    <Compile Include="l6_homework\alice_competition_bench2.py" />
+    <Compile Include="l6_homework\alice_competition_bench2_9569_9536.py" />
+    <Compile Include="l6_homework\__init__.py" />
+    <Compile Include="l10_gboosting.py" />
+    <Compile Include="l9_timeseries.py" />
+    <Compile Include="l8_bigdata.py" />
+    <Compile Include="l7_unsupervised.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="l8_script\preprocess.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="l8_script\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="utils.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="program.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="l3_optional\" />
+    <Folder Include="alice\" />
+    <Folder Include="l6_homework\" />
+    <Folder Include="l8_script\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="alice\_readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="l6_homework\_readme.txt" />
+    <Content Include="_readme.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
