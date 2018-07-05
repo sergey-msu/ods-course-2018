@@ -2,17 +2,16 @@ import os
 
 class PATH:
   CURRENT   = os.path.dirname(os.path.realpath(__file__))
-  RESOURCES = os.path.join(CURRENT, '..\_src')
+  RESOURCES = os.path.join(CURRENT, '..\data')
   STORE     = os.path.join(CURRENT, '..\_store')
-  COURSE_DATA = os.path.join(RESOURCES, 'mlcourse_open-master\data')
 
   @staticmethod
   def COURSE_PATH(dir):
-    return os.path.join(PATH.COURSE_DATA, dir)
+    return os.path.join(PATH.RESOURCES, dir)
 
   @staticmethod
   def COURSE_FILE(fn, dir=None):
-    root = PATH.COURSE_DATA if dir is None else PATH.COURSE_PATH(dir)
+    root = PATH.RESOURCES if dir is None else PATH.COURSE_PATH(dir)
     return os.path.join(root, fn)
 
   @staticmethod
